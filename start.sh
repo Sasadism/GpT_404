@@ -20,4 +20,10 @@ chmod +x x-ui
 
 echo "Starting 3X-UI..."
 
+echo "=========="
+pwd
+ls -lah
+find . -maxdepth 2 -type f
+echo "=========="
+
 ./x-ui
