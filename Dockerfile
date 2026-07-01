@@ -1,6 +1,8 @@
-FROM alpine:latest
+FROM debian:bookworm-slim
 
-RUN apk add --no-cache bash curl tar
+RUN apt-get update && \
+    apt-get install -y curl tar ca-certificates && \
+    rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
