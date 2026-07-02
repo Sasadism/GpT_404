@@ -26,4 +26,7 @@ ls -lah
 find . -maxdepth 2 -type f
 echo "=========="
 
+chmod +x ./x-ui
+ls -lah ./x-ui
+
 ./x-ui
